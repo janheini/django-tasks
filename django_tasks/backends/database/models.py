@@ -50,7 +50,7 @@ else:
 
 
 DATE_MAX = datetime.datetime(9999, 1, 1)
-DATE_MAXS = (DATE_MAX.astimezone(datetime.timezone.utc), DATE_MAX)
+DATE_MAXS = (datetime.datetime(9999, 1, 1, tzinfo=datetime.timezone.utc), DATE_MAX)
 
 
 def get_date_max() -> datetime.datetime:
